@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Год первого издания: " + generationP.year);
         generationP.setYear(2022);
         System.out.println("Год последнего издания: " + generationP.year);
-        System.out.println("--------------------------------------------------");
+        System.out.println("-------------------------------------------------");
         Author author2 = new Author("Дмитрий", "Глуховский");
         Book text = new Book(author2, "Текст", 2017);
         System.out.println("Автор: " + author2.getName() + " " + author2.getSurname());
