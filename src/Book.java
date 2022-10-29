@@ -2,7 +2,6 @@ public class Book {
     private Author author;
     private String bookName;
     int year;
-
     public Author getAuthor() {
         return author;
     }
