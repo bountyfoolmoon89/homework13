@@ -19,4 +19,20 @@ public class Book {
         this.bookName = bookName;
         this.year = year;
     }
+    public String toString() {
+        return author + " Название: " + bookName + " Год издания: " + year;
+    }
+    public boolean equals (Object other){
+        if (this.getClass() != other.getClass()){
+            return false;
+        }
+        if (this == other){
+            return true;
+        }
+        Book book1 = (Book) other;
+        return true;
+    }
+    public int hashCode() {
+        return java.util.Objects.hash(bookName, year);
+    }
 }
