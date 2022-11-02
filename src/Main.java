@@ -7,11 +7,19 @@ public class Main {
         System.out.println("Год первого издания: " + generationP.year);
         generationP.setYear(2022);
         System.out.println("Год последнего издания: " + generationP.year);
-        System.out.println("--------------------------------------------------");
+        printSeparator();
         Author author2 = new Author("Дмитрий", "Глуховский");
         Book text = new Book(author2, "Текст", 2017);
         System.out.println("Автор: " + author2.getName() + " " + author2.getSurname());
         System.out.println("Название: " + text.getBookName());
         System.out.println("Год первого издания: " + text.year);
+        printSeparator();
+        System.out.println(text);
+        System.out.println(generationP);
+        printSeparator();
+
+    }
+    public static void printSeparator() {
+        System.out.println("-------------------------------------------------");
     }
 }
