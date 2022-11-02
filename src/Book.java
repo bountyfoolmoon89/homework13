@@ -20,7 +20,7 @@ public class Book {
         this.year = year;
     }
     public String toString() {
-        return author + " Название: " + bookName + " Год издания: " + year;
+        return author.toString() + " Название: " + bookName + " Год издания: " + year;
     }
     public boolean equals (Object other){
         if (this.getClass() != other.getClass()){
